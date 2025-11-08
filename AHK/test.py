@@ -14,8 +14,8 @@ logging.basicConfig(
 
 async def send_test_telegram_alert():
     try:
-        bot_token = '7878474153:AAGxb39AIdALbRYobjkCiJXQdbyb4ReC6Uw'  # Replace with your actual bot token
-        chat_id = '-4625746737'      # Replace with your actual chat ID
+        bot_token = ''  # Replace with your actual bot token
+        chat_id = ''      # Replace with your actual chat ID
         bot = Bot(token=bot_token)
         message = "🚀 **Test Alert** 🚀\nbittal bohot badha gandu hai."
         await bot.send_message(chat_id=chat_id, text=message, parse_mode=ParseMode.MARKDOWN)
