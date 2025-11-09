@@ -11,7 +11,7 @@ def is_token_expired(token, *args, tolerance=300):
         if isinstance(token, bytes):
             token = token.decode('utf-8')
 
-        expected_audience = "letsdoit-3924b"  # Adjust to match your Firebase project ID
+        expected_audience = ""  # Adjust to match your Firebase project ID
 
         decoded_token = jwt.decode(
             token,
